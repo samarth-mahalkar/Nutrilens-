@@ -1,6 +1,6 @@
 import { calculateNutriScore, convertOpenFoodFactsToNutrition, determineProductCategory } from '../utils/nutriScore';
 
-const API_BASE_URL = 'http://localhost:8002';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 export interface ProductNutrients {
   fat: number;
